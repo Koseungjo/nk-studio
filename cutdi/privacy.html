@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>컷디 개인정보처리방침 · CUTDI</title><link rel="icon" href="icon.png" type="image/png"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">본문으로 이동</a><div class="wrap"><header class="nav"><a class="brand" href="index.html" aria-label="컷디 소개">CUTDI</a><nav class="navlinks" aria-label="주 메뉴"><a href="https://koseungjo.github.io/nk-studio/">NK STUDIO</a><a href="privacy.html" aria-current="page">개인정보처리방침</a><a href="terms.html">이용약관</a></nav></header><main class="document" id="main"><h1>컷디 개인정보처리방침</h1><p class="meta">시행일: 2026년 10월 8일 · 운영자 엔케이 스튜디오(NK STUDIO)</p>
+<p>컷디(CUTDI)는 사진 스티커와 글, 손글씨로 일기를 만드는 Android 앱입니다. 운영자는 엔케이 스튜디오(NK STUDIO)입니다. 이 안내는 컷디의 데이터 처리 방식을 설명합니다.</p>
+<h2>1. 기기에 저장되는 기록</h2>
+<p>컷디는 개발자 서버, 광고, 개발자가 운영하는 사용 분석 서비스를 제공하지 않습니다. 일기 본문, 사진 사본, 스티커, 그림과 앱 설정은 앱 내부 저장공간에 보관합니다. 사용자가 선택한 Google Drive 백업은 아래 안내에 따라 전송하며 앱은 개발자 서버로 기록을 자동 수집하거나 개발자가 사용자 Drive 백업을 열람하는 기능을 제공하지 않습니다.</p>
+<h2>2. 사진 선택과 배경 제거</h2>
+<p>사진은 Android 시스템 사진 선택기 또는 파일 선택기에서 사용자가 선택한 항목을 읽어 앱 내부에 사본으로 저장합니다. 클라우드 사진을 선택하면 최초 읽기에 사진 제공자의 인터넷 통신이 필요할 수 있습니다. 사진 속 대상의 배경 제거는 기기에 포함된 ONNX 모델 또는 Google ML Kit로 기기 안에서 수행하며, 누끼 처리를 위해 사진과 처리 결과를 개발자나 Google의 서버로 업로드하지 않습니다. 사용자가 Google Drive 백업 또는 외부 공유를 선택하면 해당 기능에 따라 파일이 전송됩니다.</p>
+<h2>3. Google SDK의 진단·사용 정보</h2>
+<p>컷디는 Google ML Kit와 Google Play services를 사용합니다. 앱에 포함된 Google ML Kit SDK는 모델 다운로드·업데이트를 위해 통신하며, 기기 정보(제조사·모델·운영체제 등), 기기 또는 설치 식별자, 앱 버전, 성능·오류, API 설정과 사용 이벤트 등의 진단·사용 정보를 수집할 수 있습니다. 해당 SDK 정보는 HTTPS로 Google에 전송되며, Google은 API의 유지·개선과 오용 방지를 위해 사용합니다. 개발자는 이 통계에 대한 별도 서버를 운영하지 않습니다.</p>
+<p>SDK 정보의 수집·보관·처리와 권리 행사는 <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit Android 데이터 공개 안내</a>, <a href="https://developers.google.com/ml-kit/terms">ML Kit 약관</a> 및 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 함께 확인해 주세요. 앱 안에는 SDK 통계 전송을 끄는 별도 설정이 없습니다. SDK 통계의 특정 보관기간이나 앱 삭제 후 즉시 삭제를 보장하지 않습니다.</p>
+<h2>4. 사용자가 선택하는 내보내기와 공유</h2>
+<p>이미지·PDF 내보내기와 수동 백업은 사용자가 실행할 때만 수행합니다. 이미지는 기기의 Pictures/CUTDI에, 수동 백업은 Download/CUTDI에 저장합니다. PDF 저장 위치는 시스템 파일 선택기에서, 공유할 앱은 시스템 공유창에서 선택합니다. 선택한 외부 서비스에 전달된 파일은 해당 서비스의 개인정보처리방침에 따라 처리됩니다. 수동 백업에는 일기와 사진이 포함되며 파일 자체는 암호화되지 않습니다.</p>
+<h2>4-1. 선택 기능인 Google Drive 백업</h2>
+<p>사용자가 Google 계정 연결과 자동 백업에 동의하면 일기, 사진, 스티커, 그림과 설정이 백업 파일로 Google Drive의 컷디 전용 앱 데이터 공간에 HTTPS 전송됩니다. 계정 이메일과 Drive 계정 식별자는 연결 확인을 위해 기기에 저장하며 백업 파일에 넣지 않습니다. 앱은 다른 Drive 문서를 읽는 전체 Drive 권한을 요청하지 않습니다. 백업 파일 자체에 종단간 암호화를 적용하지 않으며 Google 서비스의 개인정보처리방침과 보관 정책이 적용됩니다.</p>
+<p>자동 백업은 마지막 저장 데이터 변경 후 1분 동안 기다려 연속 변경을 한 번으로 모은 뒤, 데이터 요금이 없는 네트워크와 배터리 조건을 만족할 때 실행됩니다. 운영체제의 백그라운드 실행 정책에 따라 실제 실행은 늦어질 수 있습니다. 동일한 내용의 중복 업로드는 생략하며 약 24시간마다 저장 내용과 최근 백업의 존재를 확인하는 복구 작업을 예약합니다. 사용자가 자동 백업을 끄거나 연결을 해제할 수 있습니다. 연결 해제와 기기의 기록 삭제, Android 기기에서 컷디 앱 제거는 과거 Drive 백업을 삭제하지 않습니다. 새 백업은 독립 전체 사본으로 저장하며 기존 원격 백업을 자동으로 덮어쓰거나 삭제하지 않으므로 보관된 사본이 Drive 저장 공간을 사용할 수 있습니다. 앱 데이터 삭제는 Google Drive 설정의 앱 관리에서 사용자가 수행할 수 있습니다. 복원은 사용자가 선택한 백업을 내려받아 검증한 뒤 기기의 기록을 전체 교체하며, 현재 기록을 먼저 백업합니다. 다중 기기의 실시간 병합 동기화는 제공하지 않습니다.</p>
+<p>Google API를 통해 접근한 데이터는 사용자가 요청한 컷디 백업·복원 기능에만 사용하며, 광고나 판매 목적으로 이용하지 않습니다. Google API에서 받은 정보의 사용 및 다른 앱으로의 전송은 Limited Use 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+<h2>5. 보관과 삭제</h2>
+<p>기록은 사용자가 삭제하거나 앱을 제거할 때까지 기기에 보관됩니다. 삭제한 일기는 휴지통에 30일 동안 보관하며 기간이 지난 기록은 다음 앱 실행 시 정리합니다. 사용자는 휴지통에서 기록을 복원하거나 영구 삭제할 수 있습니다. 일기 삭제로 스티커함이나 다른 일기의 사진까지 삭제되지는 않으며, 참조되지 않는 사진 파일은 유예기간 후 기기에서 정리될 수 있습니다. 앱 외부로 내보낸 이미지·PDF·백업과 공유된 사본은 사용자가 저장한 위치에서 별도로 삭제해야 합니다.</p>
+<p>개발자는 로컬 일기나 Google SDK 통계에 접근해 대신 삭제하는 기능을 제공하지 않습니다. 앱 내 기록 삭제나 앱 제거를 Google SDK 통계 삭제 수단으로 안내하지 않습니다. Google이 보관하는 SDK 정보에 대한 요청은 Google 개인정보처리방침의 안내를 확인해 주세요.</p>
+<h2>6. 앱 잠금과 접근</h2>
+<p>선택 기능인 앱 잠금은 Android의 생체인증 또는 기기 잠금 화면을 사용합니다. 컷디가 지문·얼굴의 생체인증 원본 정보를 읽거나 저장하지 않습니다. 앱 잠금은 화면 진입을 보호하며 일기 데이터베이스 자체를 암호화하는 기능은 아닙니다.</p>
+<h2>7. 문의와 안내 변경</h2>
+<p>고객지원 이메일: <a href="mailto:rhtmdwh19@gmail.com">rhtmdwh19@gmail.com</a></p>
+<p>문의 이메일에 사용자가 첨부한 일기와 사진은 이메일 수신자에게 전달됩니다. 개인정보 처리에 관한 문의 시 필요한 내용만 보내주세요. 앱의 데이터 처리 방식이 바뀌면 이 안내를 갱신합니다.</p>
+<p class="doc-nav"><a href="index.html">컷디 소개</a> · <a href="terms.html">이용약관</a></p>
+</main><footer><span>CUTDI · 컷디 / 엔케이 스튜디오(NK STUDIO)</span><span>시행일: 2026년 10월 8일</span></footer></div></body></html>
